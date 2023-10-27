@@ -1,6 +1,9 @@
 class Socio {
 	const actividadesRealizadas = []
+	const idiomas = []
 	const actividadesMaximas
+	const edad
+	
 	
 	method esAdoradorDelSol() = actividadesRealizadas.all({a=>a.sirveParaBroncearse()})
 	method actividadesEsforzadas() = actividadesRealizadas.filter({a=>a.requiereEsfuerzo()})
@@ -11,3 +14,4 @@ class Socio {
 		actividadesRealizadas.add(unaActividad)
 	}
 }
+

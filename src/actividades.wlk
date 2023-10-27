@@ -9,7 +9,7 @@ class Actividad {
 
 
 class Viaje inherits Actividad {
-	const idiomas = []
+	const idiomas = #{}
 	
 	override method idiomasUtilizados() = idiomas
 	method esInteresante() = 1 < idiomas.size()
@@ -18,7 +18,7 @@ class Viaje inherits Actividad {
 class ViajeDePlaya inherits Viaje{
 	const largoDePlaya
 	
-	override method diasRequeridos() = largoDePlaya / 500
+	 override method diasRequeridos() = largoDePlaya / 500
 	override method requiereEsfuerzo() = largoDePlaya > 1200
 	override method sirveParaBroncearse() = true
 }
